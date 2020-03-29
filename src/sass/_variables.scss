@@ -1,12 +1,13 @@
 //Typography
-$font-stack: 'Arial', sans-serif;
+$font-stack: 'Nunito', sans-serif;
 
 // Layout
 $spacer-large: 20px;
 $spacer-small: 7px;
 
 // Colors
-$color-primary: hsl(120, 40%, 75%);
-$color-body: #ccc;
-$color-background: rgba(17, 17, 17, 0.9);
-$color-background-dark: rgba(17, 17, 17, 0.4);
+$color-primary: #fff;
+$color-secondary: hsl(40, 75%, 40%);
+$color-body: #111;
+$color-background: #fff;
+$color-background-dark: hsl(225, 45%, 20%)

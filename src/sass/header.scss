@@ -4,7 +4,8 @@ header {
   background-color: $color-background-dark;
   align-items: center;
   justify-content: space-between;
-  padding: 0 $spacer-large 0 $spacer-large;
+  //padding: 0 $spacer-large 0 $spacer-large;
+  flex-direction: column;
   h1 {
     margin-bottom: $spacer-small;
     a {
@@ -12,10 +13,27 @@ header {
       text-decoration: none;
     }
   }
-  @include menu($color-body, $color-primary, $spacer-large);
-  .menu .menu__item .menu__link {
-    text-transform: uppercase;
-    font-weight: bold;
+  @include menu($color-primary, $color-primary, $spacer-large);
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $color-secondary;
+    padding: 0;
+    ul {
+      margin: 0;
+    }
+    .menu__item {
+      padding: $spacer-small $spacer-large $spacer-small $spacer-large;
+      transition: 500ms background-color;
+      &:hover {
+        background-color: darken($color-secondary, 20%);
+        transition: 500ms background-color;
+      }
+      .menu__link {
+        text-transform: uppercase;
+      }
+    }
   }
   .menu--collapse {
     display: none;
