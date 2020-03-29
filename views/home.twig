@@ -1,0 +1,27 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  {% for post in posts %}
+    <article class="post">
+      <div class="post__info">
+        <h2 class="post__info__title">
+          {{ post.post_title }}
+        </h2>
+        <aside>
+          <div class="post__info__author">
+            {{ post.author.display_name }}
+          </div>
+          <div class="post__info__date">
+            {{ post.date }}
+          </div>
+        </aside>
+      </div>
+      <div class="post__content">
+        {{ post.post_excerpt }}
+      </div>
+      <div class="post__link">
+        <a href="{{ post.link }}">...</a>
+      </div>
+    </article>
+  {% endfor %}
+{% endblock %}

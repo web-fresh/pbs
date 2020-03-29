@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  {% for post in posts %}
+    <article class="post" style="min-height: 100vh;">
+      <h2 class="post__title">
+        {{ post.post_title }}
+      </h2>
+      <div class="post__content">
+        {{ post.post_content }}
+      </div>
+    </article>
+  {% endfor %}
+{% endblock %}

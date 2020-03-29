@@ -1,0 +1,44 @@
+.post {
+  background-color: $color-background-dark;
+  padding: $spacer-small;
+  margin-top: $spacer-small;
+  a {
+    color: $color-primary;
+  }
+  img {
+    border-radius: 3px;
+    max-width: 100%;
+  }
+  hr {
+    border: 2px solid $color-primary;
+  }
+  &__info {
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    flex-direction: column;
+    &__author {
+      margin-right: $spacer-small;
+      &:after {
+        content: "|";
+      }
+    }
+    h2 {
+      color: $color-primary;
+      padding: $spacer-small;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    aside {
+      display: flex;
+      padding: $spacer-small;
+      margin-bottom: $spacer-small;
+    }
+  }
+  &__content {
+    padding: inherit;
+    border-radius: 0 0 3px 3px;
+  }
+  &__link {
+    padding: inherit;
+  }
+}

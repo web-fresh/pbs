@@ -1,0 +1,24 @@
+@mixin menu($color, $color-hover, $space) {
+  nav.menu {
+    ul {
+      display: flex;
+      padding-left: 0px;
+      .menu__item {
+        display: flex;
+        margin-right: $space;
+        .menu__link {
+          text-decoration: none;
+          color: $color;
+          transition: 1s;
+          &:hover {
+            color: $color-hover;
+            transition: 1s;
+          }
+        }
+      }
+      .menu__item:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+footer {
+  padding: $spacer-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include menu($color-body, $color-primary, $spacer-large);
+}

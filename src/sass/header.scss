@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  flex: 1 0 10%;
+  background-color: $color-background-dark;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacer-large 0 $spacer-large;
+  h1 {
+    margin-bottom: $spacer-small;
+    a {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+  @include menu($color-body, $color-primary, $spacer-large);
+  .menu .menu__item .menu__link {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .menu--collapse {
+    display: none;
+    margin-bottom: $spacer-small;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+    .menu--collapse {
+      display: flex;
+    }
+    .menu {
+      display: none;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}

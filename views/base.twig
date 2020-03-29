@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" {{site.language_attributes}}>
+  <head>
+    <meta charset="{{site.charset}}">
+    <title>   
+      {% if wp_title %}
+        {{ wp_title }} - {{ site.name }}
+      {% else %}
+        {{ site.name }}
+      {% endif %}
+    </title>
+    <meta name="description" content="{{site.description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.theme.link }}/style.css">
+    <script src="{{ site.theme.link }}/app.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">{{ site.name }}</a>
+      </h1>
+      <div id="menuToggle" class="menu--collapse">MENU</div>
+      {% include "menu.twig" with {'items': menu_header.get_items, 'id': 'menuMain'} %}
+    </header>
+    <div class="wrapper">
+      {% block content %}
+        Nothing to see here...
+      {% endblock %}
+      <footer>
+        {% include "menu.twig" with {'items': menu_footer.get_items} %}
+        {{ site.name }} - 2020
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<nav id="{{ id }}" class="menu" role="navigation">
+  <ul>
+    {% for item in items %}
+      <li class="menu__item {{item.classes | join(' ')}}">
+        <a class="menu__link" href="{{item.get_link}}">{{item.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
