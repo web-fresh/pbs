@@ -7,11 +7,22 @@
   margin-bottom: $spacer-small;
   flex-direction: column;
   color: $color-primary;
+  &__logo {
+    margin-right: 10px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
   &__tagline {
     margin-bottom: 10px;
   }
   h1 {
-    margin-bottom: 0;
+    margin: 10px 0 0 0;
     a {
       text-decoration: none;
       color: $color-primary;

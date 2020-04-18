@@ -16,12 +16,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__info">
-        <h1 class="header__name">
-          <a href="/">{{ site.name }}</a>
-        </h1>
-        <div class="header__tagline">
-          {{ site.description }}
+      <div class="header__content">
+        <img class="header__logo" width="150px" height="50px" src="{{ custom_logo_url }}">
+        <div class="header__info">
+          <h1 class="header__name">
+            <a href="/">{{ site.name }}</a>
+          </h1>
+          <div class="header__tagline">
+            {{ site.description }}
+          </div>
         </div>
       </div>
       <div id="menuToggle" class="menu--collapse">MENU</div>
