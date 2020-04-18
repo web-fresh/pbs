@@ -39,9 +39,11 @@
       margin: 0;
     }
     .menu__item {
+      margin-right: 0px !important;
       padding: $spacer-small $spacer-large $spacer-small $spacer-large;
       transition: 500ms background-color;
-      &:hover {
+      &:hover,
+      &--active {
         background-color: darken($color-secondary, 20%);
         transition: 500ms background-color;
       }
