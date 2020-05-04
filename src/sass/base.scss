@@ -7,7 +7,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: $color-background;
-  color: $color-body;
+  background-color: $color-background-light;
+  color: $color-text-light;
   font-family: $font-stack;
 }

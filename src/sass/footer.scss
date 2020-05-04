@@ -3,5 +3,5 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include menu($color-body, $color-primary, $spacer-large);
+  @include menu($color-primary, $color-secondary, $spacer-large);
 }

@@ -2,37 +2,24 @@
   background-color: $color-background-dark;
   padding: $spacer-small;
   margin-top: $spacer-small;
+  border-radius: $size-border-radius;
   a {
-    color: $color-primary;
+    color: $color-text-link;
   }
   img {
-    border-radius: 3px;
     max-width: 100%;
   }
-  hr {
-    border: 2px solid $color-primary;
+  img,
+  iframe {
+    border-radius: $size-border-radius;
   }
-  &__info {
-    border-radius: 3px 3px 0 0;
-    display: flex;
-    flex-direction: column;
-    &__author {
-      margin-right: $spacer-small;
-      &:after {
-        content: "|";
-      }
-    }
-    h2 {
-      color: $color-primary;
-      padding: $spacer-small;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    aside {
-      display: flex;
-      padding: $spacer-small;
-      margin-bottom: $spacer-small;
-    }
+  &__title {
+    color: $color-text-light;
+    padding: $spacer-small;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: $size-content-title;
   }
   &__content {
     padding: inherit;

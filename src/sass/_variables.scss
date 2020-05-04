@@ -1,13 +1,16 @@
 //Typography
 $font-stack: 'Nunito', sans-serif;
+$size-content-title: 1.2rem;
 
 // Layout
 $spacer-large: 20px;
 $spacer-small: 7px;
+$size-border-radius: 3px;
 
 // Colors
-$color-primary: #fff;
+$color-primary: hsl(225, 45%, 20%);
 $color-secondary: hsl(40, 75%, 40%);
-$color-body: #111;
-$color-background: #fff;
+$color-text-link: hsl(40, 75%, 50%);
+$color-text-light: #fff;
+$color-background-light: #fff;
 $color-background-dark: hsl(225, 45%, 20%)
