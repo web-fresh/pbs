@@ -8,7 +8,7 @@
         {{ post.post_title }}
       </h2>
       <div class="post__content">
-        {{ post.post_content }}
+        {{ post.post_content|wpautop|shortcodes }}
       </div>
     </article>
   {% endfor %}

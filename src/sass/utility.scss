@@ -6,3 +6,10 @@
 .visually-hidden {
     display: none !important;
 }
+
+// Media Queries
+@media only screen and (max-width: $breakpoint-small) {
+    .width-50 {
+        width: 100% !important
+    }
+}

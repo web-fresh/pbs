@@ -22,10 +22,21 @@
     font-size: $size-content-title;
   }
   &__content {
+    display: flex;
     padding: inherit;
     border-radius: 0 0 3px 3px;
+    .hours {
+      margin-left: $spacer-large;
+    }
   }
   &__link {
     padding: inherit;
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: $breakpoint-small) {
+  .post__content {
+     flex-direction: column;
   }
 }
