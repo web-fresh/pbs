@@ -1,15 +1,6 @@
-# Fresh: Wordpress Starter Theme
+# Webfresh: Palm Business Center
 
-This is a simple starting point for modern Wordpress theme development. 
-It has support for cleaner templating via Twig (Timber plugin), and support for a modren CSS/JS workflow.
-
-## Live Demo
-
-https://fresh.webfresh.dev/
-
-Bear in mind this is not intended to be a fully-featured theme. It is designed with flexibility in mind, with as little "bloat" as possible. The spacing and colors are all `_variables` in SASS, and the initial set of templates/views is very basic. 
-
-For the sake of argument, this is just using a default color scheme similar to my portfolio website at: https://webfresh.dev 
+Palm Business Center is a general purpose business store located in Palm, PA. Thier current website was 15+ years old, and in dire need of a revamp. Most notably there was a need to create a modern, responsive design. This theme accomplishes that goal, and more, by building on the Wordpress CMS, along with a modern CSS/JS workflow and Twig templates via the Timber plugin.
 
 ## Required Wordpress Plugins
 
