@@ -4,3 +4,10 @@
   overflow-x: hidden;
   padding: 0 $spacer-large 0 $spacer-large;
 }
+
+// Media Queries 
+@media screen and (max-width: $breakpoint-large) {
+  .wrapper {
+    padding: 0 $spacer-small 0 $spacer-small;
+  }
+}

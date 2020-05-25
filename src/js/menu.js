@@ -12,8 +12,6 @@ export function deactivateToggle() {
     const menuHidden = menu.style.display === "none";
     const toggle = document.getElementById("menuToggle");
 
-
     if (menuHidden) toggleMenu();
-    toggle.classList.toggle("rotate-icon");
   }
 }
