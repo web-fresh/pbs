@@ -44,3 +44,9 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-small) {
+  .header__content {
+    text-align: center;
+  }
+}
