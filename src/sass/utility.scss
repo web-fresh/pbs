@@ -7,9 +7,17 @@
     display: none !important;
 }
 
+.flex {
+    display: flex !important;
+}
+
 // Media Queries
 @media only screen and (max-width: $breakpoint-small) {
     .width-50 {
-        width: 100% !important
+        width: 100% !important;
+    }
+
+    .flex {
+        flex-direction: column !important;
     }
 }
