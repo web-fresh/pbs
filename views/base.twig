@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ site.theme.link }}/style.css">
     <script src="{{ site.theme.link }}/app.min.js"></script>
+    <script src="https://kit.fontawesome.com/b4c4015858.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div id="menuToggle" class="menu--collapse">MENU</div>
+      <div id="menuToggle" class="menu--collapse">MENU <i class="fas fa-angle-down"></i></div>
       {% include "menu.twig" with {'items': menu_header.get_items, 'id': 'menuMain'} %}
     </header>
     <div class="wrapper">

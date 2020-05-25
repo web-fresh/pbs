@@ -11,6 +11,13 @@
     display: flex !important;
 }
 
+.rotate-icon {
+    i {
+        transform: rotate(180deg);
+        transition: all 250ms;
+    }
+}
+
 // Media Queries
 @media only screen and (max-width: $breakpoint-small) {
     .width-50 {
