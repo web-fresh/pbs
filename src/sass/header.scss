@@ -1,12 +1,13 @@
 .header {
   display: flex;
-  flex: 1 0 10%;
   background-color: $color-background-dark;
   align-items: center;
   justify-content: space-between;
   margin-bottom: $spacer-small;
   flex-direction: column;
   color: $color-text-light;
+  flex-grow: 1;
+  flex-shrink: 0;
   &__logo {
     margin-right: 10px;
   }
